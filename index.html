@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sundhar's Website</title>
+    <title>Sundhar's Safety Website</title>
 
     <style>
         html {
@@ -35,7 +35,7 @@
         }
 
         section {
-            max-width: 700px;
+            max-width: 800px;
             margin: 40px auto;
             padding: 50px 20px;
             background-color: white;
@@ -54,6 +54,7 @@
 
         p {
             font-size: 18px;
+            line-height: 1.6;
         }
 
         button {
@@ -70,11 +71,35 @@
             background-color: #00a8cc;
         }
 
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .card {
+            width: 200px;
+            padding: 20px;
+            background-color: #f1f9ff;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            color: #062c8c;
+        }
+
         footer {
             background-color: #111;
             color: white;
             padding: 20px;
             margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 15px;
         }
     </style>
 </head>
@@ -90,24 +115,48 @@
 
     <section id="home">
         <h1>Hello! I'm Sundhar 👋</h1>
-        <p>Welcome to my first website!</p>
+        <p>Welcome to my Safety Engineering website!</p>
         <button onclick="welcome()">Click Me</button>
     </section>
 
     <section id="about">
         <h2>About Me 👨‍💻</h2>
         <p>
-            I am Sundhar. I am learning web development
-            and building my first website.
+            I am Sundhar, a Safety and Fire Engineering student.
+            I am learning web development and creating my first website.
         </p>
     </section>
 
     <section id="safety">
-        <h2>Safety 🦺</h2>
-        <p>
-            Safety is important in every workplace.
-            Safe work practices help prevent accidents.
-        </p>
+        <h2>Safety Topics 🦺</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>🦺 PPE</h3>
+                <p>
+                    Personal Protective Equipment helps protect
+                    workers from workplace hazards.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🔥 Fire Safety</h3>
+                <p>
+                    Fire safety practices help prevent fires
+                    and protect people during emergencies.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>⚠️ Machine Safety</h3>
+                <p>
+                    Proper machine guarding helps reduce
+                    the risk of workplace injuries.
+                </p>
+            </div>
+
+        </div>
     </section>
 
     <section id="contact">
@@ -117,16 +166,16 @@
     </section>
 
     <footer>
-        <p>© 2026 Sundhar | My First Website</p>
+        <p>© 2026 Sundhar | Safety Engineering Website</p>
     </footer>
 
     <script>
         function welcome() {
-            alert("🎉 Welcome Sundhar!");
+            alert("🎉 Welcome to Sundhar's website!");
         }
 
         function contactMessage() {
-            alert("👋 Thanks for visiting my website!");
+            alert("👋 Thanks for visiting!");
         }
     </script>
 
