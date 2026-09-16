@@ -35,7 +35,7 @@
         }
 
         section {
-            max-width: 800px;
+            max-width: 850px;
             margin: 40px auto;
             padding: 50px 20px;
             background-color: white;
@@ -58,13 +58,14 @@
         }
 
         button {
-            padding: 12px 25px;
-            font-size: 17px;
+            padding: 10px 18px;
+            font-size: 15px;
             border: none;
             border-radius: 8px;
             background-color: #062c8c;
             color: white;
             cursor: pointer;
+            margin-top: 10px;
         }
 
         button:hover {
@@ -80,7 +81,7 @@
         }
 
         .card {
-            width: 200px;
+            width: 210px;
             padding: 20px;
             background-color: #f1f9ff;
             border-radius: 12px;
@@ -134,26 +135,20 @@
 
             <div class="card">
                 <h3>🦺 PPE</h3>
-                <p>
-                    Personal Protective Equipment helps protect
-                    workers from workplace hazards.
-                </p>
+                <p>Personal Protective Equipment helps protect workers from workplace hazards.</p>
+                <button onclick="showInfo('PPE')">Learn More</button>
             </div>
 
             <div class="card">
                 <h3>🔥 Fire Safety</h3>
-                <p>
-                    Fire safety practices help prevent fires
-                    and protect people during emergencies.
-                </p>
+                <p>Fire safety practices help prevent fires and protect people during emergencies.</p>
+                <button onclick="showInfo('Fire Safety')">Learn More</button>
             </div>
 
             <div class="card">
                 <h3>⚠️ Machine Safety</h3>
-                <p>
-                    Proper machine guarding helps reduce
-                    the risk of workplace injuries.
-                </p>
+                <p>Proper machine guarding helps reduce the risk of workplace injuries.</p>
+                <button onclick="showInfo('Machine Safety')">Learn More</button>
             </div>
 
         </div>
@@ -176,6 +171,20 @@
 
         function contactMessage() {
             alert("👋 Thanks for visiting!");
+        }
+
+        function showInfo(topic) {
+            if (topic === "PPE") {
+                alert("🦺 PPE includes safety helmets, gloves, safety shoes and eye protection.");
+            }
+
+            else if (topic === "Fire Safety") {
+                alert("🔥 Fire safety includes prevention, emergency planning, alarms and safe evacuation.");
+            }
+
+            else if (topic === "Machine Safety") {
+                alert("⚠️ Machine safety includes proper guarding, safe operating procedures and regular inspection.");
+            }
         }
     </script>
 
