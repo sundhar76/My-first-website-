@@ -1,47 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My First Website</title>
+    <title>Sundhar's Website</title>
 
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            background-color: lightblue;
+            background: linear-gradient(135deg, #dff6ff, #b8e0f2);
             text-align: center;
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             margin: 0;
         }
 
         nav {
-            background-color: black;
-            padding: 15px;
+            background-color: #111;
+            padding: 18px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 15px;
-            font-size: 18px;
+            margin: 12px;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            color: #00d9ff;
         }
 
         section {
-            padding: 60px 20px;
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 50px 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
         h1 {
-            color: darkblue;
+            color: #062c8c;
+            font-size: 32px;
         }
 
         h2 {
-            color: darkblue;
+            color: #062c8c;
         }
 
         p {
-            font-size: 20px;
+            font-size: 18px;
         }
 
         button {
-            padding: 10px 20px;
-            font-size: 18px;
+            padding: 12px 25px;
+            font-size: 17px;
+            border: none;
+            border-radius: 8px;
+            background-color: #062c8c;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #00a8cc;
+        }
+
+        footer {
+            background-color: #111;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -57,28 +90,43 @@
 
     <section id="home">
         <h1>Hello! I'm Sundhar 👋</h1>
-        <p>This is my first website.</p>
+        <p>Welcome to my first website!</p>
         <button onclick="welcome()">Click Me</button>
     </section>
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>I am learning web development.</p>
+        <h2>About Me 👨‍💻</h2>
+        <p>
+            I am Sundhar. I am learning web development
+            and building my first website.
+        </p>
     </section>
 
     <section id="safety">
-        <h2>Safety</h2>
-        <p>Safety is important in every workplace.</p>
+        <h2>Safety 🦺</h2>
+        <p>
+            Safety is important in every workplace.
+            Safe work practices help prevent accidents.
+        </p>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
+        <h2>Contact 📞</h2>
         <p>Thanks for visiting my website!</p>
+        <button onclick="contactMessage()">Say Hello</button>
     </section>
+
+    <footer>
+        <p>© 2026 Sundhar | My First Website</p>
+    </footer>
 
     <script>
         function welcome() {
             alert("🎉 Welcome Sundhar!");
+        }
+
+        function contactMessage() {
+            alert("👋 Thanks for visiting my website!");
         }
     </script>
 
